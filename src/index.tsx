@@ -147,7 +147,7 @@ export const usePdf = ({
   }, [workerSrc]);
 
   useEffect(() => {
-    const config: pdfjs.PDFSource = { url: file, withCredentials };
+    const config: pdfjs.PDFSource = { file, withCredentials };
     if (cMapUrl) {
       config.cMapUrl = cMapUrl;
       config.cMapPacked = cMapPacked;
